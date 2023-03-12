@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="mijnscript.js"></script>
+    <link rel="stylesheet" href="mijnstyle.css">
+    
+    <button id="A" onclick="addHistory('A')">A</button>
+<button id="B" onclick="addHistory('B')">B</button>
+<button id="C" onclick="addHistory('C')">C</button>
+<button id="D" onclick="addHistory('D')">D</button>
+
+<div id="history"></div>
+<script>
+let clickHistory = [];
+
+function addHistory(btn) {
+  clickHistory.push(btn);
+  let message = "U heeft op knop " + clickHistory.join(", ") + " geklikt.";
+  document.getElementById("history").innerText = message;
+}
+</script>
+

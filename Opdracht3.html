@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="mijnscript.js"></script>
+    <link rel="stylesheet" href="mijnstyle.css">
+    
+    <input type="text" id="input1" placeholder="Typ hier een woord">
+    <input type="text" id="input2" placeholder="Typ hier een letter">
+    <button onclick="countLetter()">Klik hier om te tellen</button>
+    <script>
+    function countLetter() {
+      let word = document.getElementById("input1").value;
+      let letter = document.getElementById("input2").value;
+      let count = 0;
+      for (let i = 0; i < word.length; i++) {
+        if (word[i] === letter) {
+          count++;
+        }
+      }
+      if (count > 0) {
+        alert(`Het woord '${word}' bevat ${count} keer de letter '${letter}'.`);
+      }
+    }
+    </script>
+</body>
+</html>
+
+
+

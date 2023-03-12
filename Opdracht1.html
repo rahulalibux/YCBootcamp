@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="mijnscript.js"></script>
+    <link rel="stylesheet" href="mijnstyle.css">
+    
+    <script>
+        //1 wat is mijn doelstelling  ||  opknippen??
+        //2 hoe kan ik dat realiseren
+        //3 coderen
+        function hierTeBeginnen(){
+            var voornaam = document.getElementById("invoer").value;
+            console.log(voornaam);
+            if(voornaam == "hallo"){
+                alert("Goedemorgen");
+            }
+            if(voornaam == "doei"){
+                alert("Tot de volgende keer");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input id="invoer">
+    <input type="button" value="Klik hier" onclick="hierTeBeginnen()">
+    <div id="uitvoer"></div>
+</body>
+</html>
+
+
